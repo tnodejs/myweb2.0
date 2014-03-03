@@ -1,0 +1,22 @@
+/**
+ *
+ * config for mongodb
+ * --------------------------------------------------------
+ * if you want to use mongodb, you should add configure for it
+ * host is mongodb server host ip such as 127.0.0.1, it is a string
+ * port is mongodb server port such as 27017, it is a int
+ * password is mongodb server password such as pass, it is a string
+ * db_name is mongodb db name, it is a string
+ * --------------------------------------------------------
+ * @author by danhuang
+ * @time 2014-02-24
+ */
+{
+	"db" : {
+		"host" : "127.0.0.1",
+		"port" : 27017,
+		"user" : "",
+		"password" : "",
+		"db_name" : "db_name"
+	}
+}
