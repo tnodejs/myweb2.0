@@ -32,6 +32,7 @@ module.exports = function(){
 完成以上三个过程以后，我们就可以在根目录下运行下面命令启动服务。<br/>
 node app
 成功运行后，可以看到如下日志信息，表明成功启动。<br/>
+<pre>
 C:\Users\danhuang\Desktop\myweb_proj>node app
 load mysql success
 load http success
@@ -57,6 +58,7 @@ load ../app/core/curl success
 load ../app/core/baseMongodb success
 server start 127.0.0.1:3316
 -----------------------------
+</pre>
 <h3>查看服务是否正常</h3>
 成功运行服务器以后，我们就可以打开浏览器，访问：http://127.0.0.1:3316/example/test 如果看到如下信息表示成功运行：<br/>
 is a myweb test by danhuang
