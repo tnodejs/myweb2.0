@@ -1,0 +1,38 @@
+/**
+ *
+ * config for auto load module
+ * --------------------------------------------------------
+ * if you want auto load some module, you can configure it here
+ * if you do this, you can use this module every where you like
+ * if you need auto load a self modules, you need base on the path node_modules, such as http_param modules is in node_modules path, so you can set ./http_param to load
+ * below is system base modules, you must not remove it, if you need more, you can add below
+ * --------------------------------------------------------
+ * @author by danhuang
+ * @time 2014-02-24
+ */
+{
+	/* system base modules */
+	"MYSQL"            : "mysql",
+	"HTTP"             : "http",
+	"URL"              : "url",
+	"PATH"             : "path",
+	"QUERYSTRING"      : "querystring",
+	"JADE"             : "jade",
+	"SOCKETIO"         : "socket.io",
+	"CONNECT"          : "connect",
+	"SYS"              : "util",
+	"LOG4JS"           : "log4js",
+	"MONGODB"          : "mongodb",
+	"FS"               : "fs",
+	/* load self system modules, base path is node_modules */
+	"HTTPPARAM"        : "./http_param",
+	"STATICMODULE"     : "./static_module",
+	"SESSION"          : "./node_session",
+	"ROUTER"           : "../app/core/router",
+	"ACTION"           : "../app/core/action",
+	"LOG"              : "../app/core/log",
+	"APPLOG"           : "../app/core/appLog",
+	"UTIL"             : "../app/core/comm/util",
+	"CURL"             : "../app/core/curl",
+	"MODEL"            : "../app/core/baseMongodb"
+}

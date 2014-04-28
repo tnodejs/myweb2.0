@@ -1,0 +1,20 @@
+/**
+ *
+ * config for system
+ * --------------------------------------------------------
+ * ip_port system listen ip and port
+ * check system load mongodb or not, 0 not load, 1 load
+ * --------------------------------------------------------
+ * @author by danhuang
+ * @time 2014-02-24
+ */
+{
+	"ip_port" : {
+		"ip"     : "127.0.0.1",
+		"port"   : 3316
+	},
+	"load_model" : 0,
+	
+	/* you can add 404 default page */
+	"page_404"   : "404.html"
+}
