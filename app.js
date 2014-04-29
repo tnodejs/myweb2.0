@@ -17,17 +17,28 @@
  *
  * set global path
  */
+<<<<<<< HEAD
 global.BASE_DIR  = __dirname;
+=======
+global.BASE_DIR = __dirname;
+>>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 global.APP       = BASE_DIR + "/app/";
 global.CON       = APP      + "controller/";
 global.CORE      = APP      + "core/";
 global.COMM      = CORE     + "comm/";
+<<<<<<< HEAD
 global.PMODEL    = APP      + "model/";
+=======
+global.PMODEL     = APP      + "model/";
+>>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 global.LIB       = BASE_DIR + "/node_modules/";
 global.CONF      = BASE_DIR + "/conf/";
 global.STATIC    = BASE_DIR + "/static/";
 global.VIEW      = BASE_DIR + "/view/";
+<<<<<<< HEAD
 global.CACHE     = BASE_DIR + "/cache/";
+=======
+>>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 
 // dev, test or product
 global.ENVIRONMENT = 'dev';
@@ -61,7 +72,11 @@ global.RET_NUM = APPLOG.ERR_NUM;
 global.LOG_CONTR = APPLOG.LOG_CONTR;
 
 
+<<<<<<< HEAD
 /* you can init mongodb */
+=======
+// you can init mongodb
+>>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 if(autoLoadModel == 1){
 	var model = new MODEL();
 	model.initConnection();
@@ -69,6 +84,19 @@ if(autoLoadModel == 1){
 
 /* server start */
 global.app = HTTP.createServer(function(req, res) {
+<<<<<<< HEAD
+=======
+	/* add render function */
+	res.render = function(){
+		var template = arguments[0];
+		var options = arguments[1];
+		var str = FS.readFileSync(template, 'utf8');
+		var fn = JADE.compile(str, { filename: template, pretty: true });
+		var page = fn(options);
+		res.writeHead(200, { 'Content-Type': 'text/html' });
+		res.end(page);   
+	}
+>>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 	ROUTER.router(res, req);
 }).listen(systemConfig['port'], systemConfig['ip']);
 
