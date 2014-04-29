@@ -9,6 +9,7 @@
 <h3>创建controller</h3>
 进入本框架的根目录文件夹中的app\controller创建一个controller，例如：example.js。<br/>
 <h3>controler类的实现</h3>
+<pre>
 module.exports = function(){
     var _self = this;
     
@@ -24,15 +25,18 @@ module.exports = function(){
         _self.render('example.jade');
     }
 } 
+</pre>
 如上代码中，需要大家注意的是，res和req是HTTP的两个对象，ACTION为预载入action基类，所有的controller都需要继承该基类。这里使用了Node.js的util模块来实现继承关系。继承代码实现完成以后，再实现简单的test method，该test方法就是读取文件夹view中的example.jade模版文件。<br/>
 <h3>创建example.jade模版</h3>
 创建完成controller以后，再添加example.jade文件，然后新增代码。在项目根目录下的view文件夹中新增example.jade文件，并添加如下代码。(注意，以下是jade模版格式，需要按照jade模版规范，具体规范可查阅https://github.com/visionmedia/jade)<br/>
+<pre>
  html
     head
         title myweb test
     body
         div
             this is a myweb test by danhuang 
+</pre>
 <h3>启动服务</h3>
 完成以上三个过程以后，我们就可以在根目录下运行下面命令启动服务。<br/>
 node app
