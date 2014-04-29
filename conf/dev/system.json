@@ -13,11 +13,7 @@
 		"ip"     : "127.0.0.1",
 		"port"   : 3316
 	},
-<<<<<<< HEAD
 	"load_model" : 0,
-=======
-	"load_model" : 1,
->>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 	
 	/* you can add 404 default page */
 	"page_404"   : "404.html"

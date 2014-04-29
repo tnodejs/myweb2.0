@@ -9,7 +9,6 @@
  * @author by danhuang
  * @time 2014-02-24
  */
-<<<<<<< HEAD
 /* this for jade cache */
 var cache = {};
 
@@ -24,11 +23,6 @@ module.exports = function(){
 		res = _res;
 		req = _req;
 	}
-=======
- 
-module.exports = function(){
-	
->>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 	/**
 	 * @desc render a jade modules
 	 * @params jade string, jade name
@@ -36,11 +30,7 @@ module.exports = function(){
 	 * @return response to server client
 	 */
 	this.render = function(jade, param){
-<<<<<<< HEAD
 		render(jade, param);
-=======
-		this._res.render(VIEW + jade, param);
->>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 	}
 	
 	/**
@@ -51,11 +41,7 @@ module.exports = function(){
 	 * @params json retInfo
 	 * @return response to server client
 	 */
-<<<<<<< HEAD
 	this.exitJson = function(code, retcode, retInfo){
-=======
-	this.exitJson = function(res, code, retcode, retInfo){
->>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 		var retJson        = {};
 		retJson['ret']     = parseInt(code);
 		retJson['retcode'] = parseInt(retcode);
@@ -82,7 +68,6 @@ module.exports = function(){
 			res.end(string);
 		}
 	}
-<<<<<<< HEAD
 	
 	/**
 	 *
@@ -173,8 +158,6 @@ module.exports = function(){
 		});
 		
 	}
-=======
->>>>>>> 1e2177e55b7529b41afef80507cfec956443975b
 }
 
 /* end of file action.js */
